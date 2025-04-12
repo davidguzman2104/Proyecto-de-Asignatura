@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre el Cuerpo Humano</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Descubre el Cuerpo Humano</h1>
+    </header>
+
+    <main>
+        <div class="section">
+            <h2>Información sobre el Cuerpo Humano</h2>
+            <h3>El Corazón ❤️</h3>
+            <img src="corazon humano.jpg" alt="Imagen del corazón">
+            <p>El corazón es como una bomba. Su trabajo es empujar la sangre por todo nuestro cuerpo para que pueda llevar oxígeno y nutrientes a todas las partes.</p>
+            
+            <h3>Los Pulmones 🌬️</h3>
+            <img src="pulmones.jpg" alt="Imagen de los pulmones">
+            <p>Los pulmones son como globos que inflamos cuando respiramos. Su trabajo es tomar oxígeno del aire y enviarlo a nuestra sangre, además de sacar el dióxido de carbono.</p>
+            
+            <h3>El Estómago 🍴</h3>
+            <img src="estomago.jpg" alt="Imagen del estómago">
+            <p>El estómago es un lugar especial donde nuestra comida se descompone en cosas más pequeñas que nuestro cuerpo usa como energía.</p>
+            
+            <h3>El Cerebro 🧠</h3>
+            <img src="cerebro.jpg" alt="Imagen del cerebro">
+            <p>El cerebro es como un jefe. Se asegura de que todo nuestro cuerpo funcione correctamente, nos ayuda a pensar, recordar, y controlar nuestros movimientos.</p>
+        </div>
+
+        <div class="section">
+            <h2>🧠 Juego de Preguntas 🧠</h2>
+            <img id="questionImage" src="" alt="Imagen de la pregunta">
+            <p id="questionText"><b>Loading...</b></p>
+            <button id="option1" onclick="checkAnswer(this)"></button>
+            <button id="option2" onclick="checkAnswer(this)"></button>
+            <button id="option3" onclick="checkAnswer(this)"></button>
+            <p id="answerMessage"></p>
+        </div>
+
+        <div class="section">
+            <h2>🃏 Memorama del Cuerpo Humano 🃏</h2>
+            <p>Encuentra las parejas en este divertido juego.</p>
+            <div class="game-board" id="gameBoard"></div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Aprende Jugando</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

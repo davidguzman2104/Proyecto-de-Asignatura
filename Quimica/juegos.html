@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Interactivos</title>
+    <link rel="stylesheet" href="css/style-juegos.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Juegos Interactivos - Aprende Jugando</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="temas.html">Temas</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="introduccion">
+            <h2>🧠 ¡Aprende jugando!</h2>
+            <p>Elige un juego y pon a prueba tus conocimientos sobre los temas que has aprendido.</p>
+        </section>
+
+        <!-- Juego 1: Adivina la Respuesta -->
+        <section class="juego">
+            <h3>❓ Juego 1: Adivina la Respuesta</h3>
+            <p>Lee la pista y responde correctamente.</p>
+            <p id="pista"></p>
+            <button onclick="mostrarPregunta()">Nueva Pregunta</button>
+            <br>
+            <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+            <button onclick="verificarRespuesta()">Verificar</button>
+            <p id="resultado"></p>
+        </section>
+
+        <!-- Juego 2: Arrastra y Clasifica -->
+        <section class="juego">
+            <h3>🧩 Juego 2: Arrastra y Clasifica</h3>
+            <p>Arrastra cada elemento a su categoría correcta.</p>
+            <div class="drag-container">
+                <div class="opciones">
+                    <p draggable="true" ondragstart="drag(event)" id="elemento1">Oxígeno</p>
+                    <p draggable="true" ondragstart="drag(event)" id="elemento2">Agua</p>
+                    <p draggable="true" ondragstart="drag(event)" id="elemento3">Hierro</p>
+                </div>
+                <div class="categorias">
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="gas">💨 Gases</div>
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="liquido">💧 Líquidos</div>
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="solido">🪨 Sólidos</div>
+                </div>
+            </div>
+            <p id="mensaje"></p>
+        </section>
+
+        <!-- Juego 3: Memoria -->
+        <section class="juego">
+            <h3>🃏 Juego 3: Memoria de Elementos</h3>
+            <p>Encuentra las parejas correctas de elementos químicos.</p>
+            <div class="memoria-grid">
+                <div class="tarjeta" onclick="voltear(this)">H</div>
+                <div class="tarjeta" onclick="voltear(this)">O</div>
+                <div class="tarjeta" onclick="voltear(this)">H</div>
+                <div class="tarjeta" onclick="voltear(this)">O</div>
+            </div>
+            <p id="memoriaMensaje"></p>
+        </section>
+    </main>
+
+    <script src="js/juegos.js"></script>
+</body>
+</html>

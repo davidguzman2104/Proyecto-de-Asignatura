@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Interactivos</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+    <header>
+        <h1>🎮 Juegos Interactivos - Seres Vivos 🌱</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="temas.html">Temas</a></li>
+            <li><a href="juegos.html">Juegos</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>¡Diviértete y aprende! 🧠</h2>
+            <p>Juega y pon a prueba tus conocimientos sobre los seres vivos.</p>
+        </section>
+
+        <!-- Juego 1: Adivina el animal -->
+        <section class="juego">
+            <h3>🐾 Juego 1: Adivina el Animal</h3>
+            <p>Lee la pista y elige el animal correcto.</p>
+            <p id="pista"></p>
+            <button onclick="mostrarPregunta()">Nueva Pista</button>
+            <br>
+            <input type="text" id="respuesta" placeholder="Escribe tu respuesta">
+            <button onclick="verificarRespuesta()">Verificar</button>
+            <p id="resultado"></p>
+        </section>
+
+        <!-- Juego 2: Clasifica los seres vivos -->
+        <section class="juego">
+            <h3>🌿 Juego 2: Clasifica los Seres Vivos</h3>
+            <p>Arrastra cada palabra a su categoría correcta.</p>
+            <div class="drag-container">
+                <div class="opciones">
+                    <p draggable="true" ondragstart="drag(event)" id="animal">León</p>
+                    <p draggable="true" ondragstart="drag(event)" id="planta">Rosa</p>
+                    <p draggable="true" ondragstart="drag(event)" id="hongo">Champiñón</p>
+                </div>
+                <div class="categorias">
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="animal">🐯 Animales</div>
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="planta">🌱 Plantas</div>
+                    <div class="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)" data-categoria="hongo">🍄 Hongos</div>
+                </div>
+            </div>
+            <p id="mensaje"></p>
+        </section>
+
+        <!-- Juego 3: Memoriza y Encuentra -->
+        <section class="juego">
+            <h3>🧠 Juego 3: Memoriza y Encuentra</h3>
+            <p>Haz clic en las tarjetas para encontrar las parejas correctas.</p>
+            <div class="memoria-grid">
+                <div class="tarjeta" onclick="voltear(this)">🐶</div>
+                <div class="tarjeta" onclick="voltear(this)">🌳</div>
+                <div class="tarjeta" onclick="voltear(this)">🐶</div>
+                <div class="tarjeta" onclick="voltear(this)">🌳</div>
+            </div>
+            <p id="memoriaMensaje"></p>
+        </section>
+    </main>
+
+    <script src="js/juegos.js"></script>
+</body>
+</html>

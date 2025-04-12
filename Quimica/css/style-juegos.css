@@ -1,0 +1,121 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Menú de Navegación */
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    background-color: #34495e;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #2c3e50;
+}
+
+/* Secciones */
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.introduccion {
+    background-color: #f7f9fc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Estilos de Juegos */
+.juego {
+    background-color: white;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.juego h3 {
+    color: #2c3e50;
+}
+
+/* Drag and Drop */
+.drag-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.opciones p {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    cursor: grab;
+    border-radius: 5px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dropzone {
+    width: 30%;
+    height: 50px;
+    border: 2px dashed #2980b9;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Memoria */
+.memoria-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+    justify-content: center;
+}
+
+.tarjeta {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tarjeta:hover {
+    background-color: #2980b9;
+}
