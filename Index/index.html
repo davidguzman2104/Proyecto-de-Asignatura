@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Definición del conjunto de caracteres para soportar caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Configuración de la vista para que sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparece en la pestaña del navegador -->
+    <title>La Escuelita de Male</title>
+    <!-- Enlace a la hoja de estilos externa para dar formato a la página -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Encabezado con navegación -->
+    <header>
+        <div class="encabezado">
+            <!-- Logo de la institución en el encabezado -->
+            <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\Logo-TecNM-2017.png" alt="Logo Tecnológico Nacional de México">
+            <div class="titulo">
+                <!-- Título principal de la página -->
+                <h1>Aprende en línea en la escuelita de Male</h1>
+                <!-- Subtítulo en cursiva -->
+                <p><i>¡Aprender es una aventura en la escuelita de Male!</i></p>
+            </div>
+            <!-- Imagen adicional en el encabezado -->
+            <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\LITP.png" alt="Logo Secundario">
+        </div>
+    </header>
+    
+    <!-- Sección Principal -->
+    <main>
+        <section class="hero">
+            <!-- Título destacado de bienvenida -->
+            <h1>
+                ¡Aprender es una aventura en La Escuelita de Male!
+            </h1>
+            <div class="content">
+                <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\WhatsApp Image 2025-02-07 at 10.12.36 PM (1)-Photoroom.png" alt="Mascota Toni">
+                <p style="text-align: justify; line-height: 1.5; max-width: 250px;">
+                    Descubre el Maravilloso Mundo de la Ciencia 🌍. Bienvenido a nuestra página de Ciencias Naturales para niños. Aquí aprenderás sobre el increíble mundo que nos rodea de una manera divertida e interactiva.
+                </p>
+            </div>
+        </section>
+        <!-- Sección de cursos -->
+        <section class="cursos">
+            <!-- Cada artículo representa un curso con una imagen y su título -->
+            <article>
+                <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\8e4deaca-394c-40f1-a2eb-eadef67a13d3.webp" alt="El Cuerpo Humano">
+                <h3>1. El Cuerpo Humano y sus Funciones</h3>
+                <p style="text-align: justify; line-height: 1.5;">  
+                    Nuestro cuerpo es como una máquina que trabaja todo el tiempo.  
+                    El corazón bombea sangre, los pulmones nos ayudan a respirar,  
+                    el cerebro nos hace pensar y el estómago transforma la comida en energía.  
+                </p>
+                <a href="cuerpo-humano.html" class="tema">El Cuerpo Humano y sus Funciones</a>
+            </article>
+            <article>
+                <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\4VIbWts2Q1lqfgO32vxE--0--yv8jm.jpg" alt="Los Seres Vivos">
+                <h3>2. Los Seres Vivos y su Clasificación</h3>
+                <p style="text-align: justify; line-height: 1.5;">
+                    Los seres vivos se clasifican en animales, plantas y microorganismos. Los animales pueden ser vertebrados o invertebrados, 
+                    y las plantas en las que tienen flores y las que no. Esto nos ayuda a entender cómo viven.
+                </p>
+                <a href="seres-vivos.html" class="tema">Los Seres Vivos y su Clasificación</a> 
+            </article>
+            <article>
+                <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\_5b57d610-e387-4980-ad93-f2abc1769fc5.jpg" alt="El Entorno Natural">
+                <h3>3. El Entorno Natural y la Importancia de la Conservación</h3>
+                <p style="text-align: justify; line-height: 1.5;">
+                    El entorno natural es donde viven los seres vivos. Conservarlo es importante para proteger los recursos naturales 
+                    y asegurar un planeta saludable para el futuro.
+                </p>                
+                <a href="entorno-natural.html" class="tema">El Entorno Natural y la Conservación</a>
+            </article>
+            <article>
+                <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\DALLE2~2.WEB" alt="Principios de Química">
+                <h3>4. Principios Elementales de Química y sus Propiedades</h3>
+                <p style="text-align: justify; line-height: 1.5;">
+                    La química estudia las sustancias y sus propiedades, como el color, peso y solubilidad, que nos ayudan a entender 
+                    cómo interactúan y se usan.
+                </p>                
+                 <a href="quimica.html" class="tema">Principios de Química y sus Propiedades</a> 
+            </article>
+        </section>
+    </main>
+    <div id="chatbot"> <!-- Contenedor para el chatbot -->
+        <img src="C:\Users\danno\Documents\universidad\universidad\programacion web\pagina de educacion\images\WhatsApp Image 2025-02-07 at 10.12.36 PM (1)-Photoroom.png" alt="Avatar" id="avatar"> <!-- Avatar del chatbot -->
+        <div id="chatbox" class="oculto"> <!-- Contenedor para el cuadro de chat, inicialmente oculto -->
+            <!-- Mensajes del chat -->
+            <div class="chat-message chatbot-message">
+                <p>¡Hola! ¿En qué puedo ayudarte?</p> <!-- Mensaje inicial del chatbot -->
+            </div>
+            <!-- Input de texto para la pregunta -->
+            <input type="text" id="pregunta" placeholder="Escribe tu pregunta...">
+            <button onclick="responder()">Preguntar</button> <!-- Botón para ejecutar la función 'responder()' -->
+            <div id="respuesta" class="chat-message chatbot-message"> <!-- Contenedor para la respuesta del chatbot -->
+                <p></p>
+            </div>
+        </div> 
+    </div>
+    
+    <!-- Pie de página con información institucional -->
+    <footer>
+        <p>Tecnológico Nacional de México - Campus Pachuca - Proyecto de asignatura - Programación Web - (c) 2025</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
